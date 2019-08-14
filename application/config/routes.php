@@ -113,6 +113,11 @@ $route['admin/photo/(:any)'] = 'admin/PhotoController/$1';
 $route['admin/photo/(:any)/(:any)'] = 'admin/PhotoController/$1/$2';
 
 
+$route['admin/video'] = 'admin/VideoController';
+$route['admin/video/(:any)'] = 'admin/VideoController/$1';
+$route['admin/video/(:any)/(:any)'] = 'admin/VideoController/$1/$2';
+
+
 
 $route['admin/image-slider'] = 'admin/ImageSliderController';
 $route['admin/image-slider/(:any)'] = 'admin/ImageSliderController/$1';
@@ -166,6 +171,10 @@ $route['berita/(:any)/(:any)'] = 'public/ReadBeritaController/$1/$2';
 $route['galeri-photo'] = 'public/GaleriPhotoController';
 $route['galeri-photo/(:any)'] = 'public/GaleriPhotoController/$1';
 $route['galeri-photo/(:any)/(:any)'] = 'public/GaleriPhotoController/$1/$2';
+
+$route['galeri-video'] = 'public/GaleriVideoController';
+$route['galeri-video/(:any)'] = 'public/GaleriVideoController/$1';
+$route['galeri-video/(:any)/(:any)'] = 'public/GaleriVideoController/$1/$2';
 
 $route['default_controller']   = 'IndexController';
 $route['404_override']         = '';

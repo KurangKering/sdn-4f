@@ -19,7 +19,20 @@
 
 	<link href="<?= base_url('assets/plugins/toastr/toastr.css')  ?>" rel="stylesheet" type="text/css">
 
-
+	<style>
+		.video-js {
+			position: relative !important;
+			width: 100% !important;
+			height: auto !important;
+		}
+		vjs-poster {
+			position: absolute !important;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	</style>
 	@yield('css')
 
 	<script>
@@ -34,6 +47,7 @@
 	<script type="text/javascript" src="<?= base_url('assets/template/backend/assets/js/core/libraries/bootstrap.min.js')  ?>"></script>
 	<script type="text/javascript" src="<?= base_url('assets/template/backend/assets/js/plugins/loaders/blockui.min.js')  ?>"></script>
 	<script type="text/javascript" src="<?= base_url('assets/plugins/toastr/toastr.js')  ?>"></script>
+	<script type="text/javascript" src="<?= base_url('assets/plugins/dropzone.js')  ?>"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -154,7 +168,7 @@
 									<a href="#"><i class="icon-stack2"></i> <span>Galeri</span></a>
 									<ul>
 										<li><a href="{{ site_url('admin/album-photo') }}">Album Foto</a></li>
-										<li><a href="{{ site_url('admin/pages/visi_misi') }}">Video</a></li>
+										<li><a href="{{ site_url('admin/video') }}">Video</a></li>
 									</ul>
 								</li>
 								<li><a href="{{ site_url('admin/image-slider') }}"><i class="icon-home4"></i> <span>Image Slider</span></a></li>

@@ -19,13 +19,32 @@
   <link href="<?php echo e(site_url('assets/template/frontend/assets/plugins/jquery.smartmenus/sm-core.css')); ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo e(site_url('assets/template/frontend/assets/plugins/jquery.smartmenus/sm-clean.css')); ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo e(site_url('assets/template/frontend/assets/plugins/magnific-popup/magnific-popup.css')); ?>" rel="stylesheet" type="text/css" />
+
+  <?php echo $__env->yieldContent('css-link'); ?>
+
   <link href="<?php echo e(site_url('assets/template/frontend/assets/css/loading.css')); ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo e(site_url('assets/template/frontend/views/themes/green_land/style.css')); ?>" rel="stylesheet" type="text/css" />
+
+  <style>
+    .video-js {
+      position: relative !important;
+      width: 100% !important;
+      height: auto !important;
+    }
+    vjs-poster {
+      position: absolute !important;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  </style>
   <script type="text/javascript">
     const _BASE_URL = "<?php echo e(site_url()); ?>";
     const _CURRENT_URL = "<?php echo e(current_url()); ?>";
   </script>
   <script src="<?php echo e(site_url('assets/template/frontend/assets/js/frontend.min.js')); ?>"></script>
+  
 </head>
 <body>
   <header>
@@ -152,7 +171,10 @@
                     <a href="<?php echo e(site_url('galeri-photo')); ?>" target="_self">GALERI FOTO
                     </a>
                   </li>
-                  
+                  <li>
+                    <a href="<?php echo e(site_url('galeri-video')); ?>" target="_self">GALERI VIDEO
+                    </a>
+                  </li>
                 </ul>
               </li>
               
